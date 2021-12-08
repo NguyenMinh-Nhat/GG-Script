@@ -1,0 +1,440 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Menu = Instance.new("Frame")
+local Folder = Instance.new("Folder")
+local Home = Instance.new("TextButton")
+local Page1 = Instance.new("Frame")
+local Information = Instance.new("TextLabel")
+local Thanksforusingscript = Instance.new("TextLabel")
+local Loading = Instance.new("TextLabel")
+local nothing = Instance.new("TextLabel")
+local AntiAFK = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local LinkDiscord = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Farming = Instance.new("TextButton")
+local Page2 = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local XLPGUI = Instance.new("TextLabel")
+local XLPButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local cyberhub = Instance.new("TextLabel")
+local CyberHub = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+local Top = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(0.19822672, 0, 0.173408121, 0)
+Frame.Size = UDim2.new(0, 953, 0, 455)
+
+Menu.Name = "Menu"
+Menu.Parent = Frame
+Menu.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Menu.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Menu.Position = UDim2.new(0, 0, 0.0549450554, 0)
+Menu.Size = UDim2.new(0, 123, 0, 430)
+
+Folder.Parent = Frame
+
+Home.Name = "Home"
+Home.Parent = Folder
+Home.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Home.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Home.Position = UDim2.new(0, 0, 0.0549450554, 0)
+Home.Size = UDim2.new(0, 121, 0, 31)
+Home.Font = Enum.Font.SourceSansBold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 21.000
+
+Page1.Name = "Page1"
+Page1.Parent = Folder
+Page1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Page1.BorderColor3 = Color3.fromRGB(160, 160, 160)
+Page1.Position = UDim2.new(0.12906611, 0, 0.0549450554, 0)
+Page1.Selectable = true
+Page1.Size = UDim2.new(0, 830, 0, 430)
+Page1.Visible = false
+
+Information.Name = "Information"
+Information.Parent = Page1
+Information.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Information.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Information.Position = UDim2.new(0.00842347648, 0, 0, 0)
+Information.Size = UDim2.new(0, 130, 0, 32)
+Information.Font = Enum.Font.SourceSans
+Information.Text = "Information"
+Information.TextColor3 = Color3.fromRGB(255, 255, 255)
+Information.TextSize = 23.000
+
+Thanksforusingscript.Name = "Thanks for using script"
+Thanksforusingscript.Parent = Page1
+Thanksforusingscript.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Thanksforusingscript.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Thanksforusingscript.Position = UDim2.new(0.0108330781, 0, 0.0930232555, 0)
+Thanksforusingscript.Size = UDim2.new(0, 240, 0, 27)
+Thanksforusingscript.Font = Enum.Font.SourceSans
+Thanksforusingscript.Text = "Thanks For Using My Script,"
+Thanksforusingscript.TextColor3 = Color3.fromRGB(255, 255, 255)
+Thanksforusingscript.TextSize = 21.000
+
+Loading.Name = "Loading"
+Loading.Parent = Page1
+Loading.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Loading.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Loading.Position = UDim2.new(0.284325629, 0, 0.0930232555, 0)
+Loading.Size = UDim2.new(0, 112, 0, 27)
+Loading.Font = Enum.Font.SourceSans
+Loading.Text = "..."
+Loading.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextSize = 21.000
+
+nothing.Name = "nothing"
+nothing.Parent = Page1
+nothing.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+nothing.BorderColor3 = Color3.fromRGB(30, 30, 30)
+nothing.Position = UDim2.new(0.00962825958, 0, 0.160465121, 0)
+nothing.Size = UDim2.new(0, 354, 0, 28)
+nothing.Font = Enum.Font.SourceSans
+nothing.Text = "This Script Make By wereareone0099#5593"
+nothing.TextColor3 = Color3.fromRGB(255, 255, 255)
+nothing.TextSize = 21.000
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = Page1
+AntiAFK.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AntiAFK.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AntiAFK.Position = UDim2.new(0.00962825958, 0, 0.232558146, 0)
+AntiAFK.Size = UDim2.new(0, 171, 0, 30)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "AntiAFK:       Active"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.TextSize = 21.000
+
+Version.Name = "Version"
+Version.Parent = Page1
+Version.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Version.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Version.Position = UDim2.new(0.0120379347, 0, 0.290697664, 0)
+Version.Size = UDim2.new(0, 118, 0, 27)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "Version:   ..."
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 21.000
+
+LinkDiscord.Name = "Link Discord"
+LinkDiscord.Parent = Page1
+LinkDiscord.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LinkDiscord.BorderColor3 = Color3.fromRGB(30, 30, 30)
+LinkDiscord.Position = UDim2.new(0.0096282959, 0, 0.416279078, 0)
+LinkDiscord.Size = UDim2.new(0, 129, 0, 28)
+LinkDiscord.Font = Enum.Font.SourceSans
+LinkDiscord.Text = "Link Discord:"
+LinkDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+LinkDiscord.TextSize = 21.000
+
+TextButton.Parent = Page1
+TextButton.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+TextButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.219927102, 0, 0.430232555, 0)
+TextButton.Size = UDim2.new(0, 226, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Copy"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 22.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = TextButton
+
+Farming.Name = "Farming"
+Farming.Parent = Folder
+Farming.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Farming.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Farming.Position = UDim2.new(0, 0, 0.127472535, 0)
+Farming.Size = UDim2.new(0, 121, 0, 29)
+Farming.Font = Enum.Font.SourceSansBold
+Farming.Text = "Scripts"
+Farming.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farming.TextSize = 21.000
+
+Page2.Name = "Page2"
+Page2.Parent = Folder
+Page2.Active = true
+Page2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Page2.BorderColor3 = Color3.fromRGB(160, 160, 160)
+Page2.Position = UDim2.new(0.12906611, 0, 0.0549450554, 0)
+Page2.Size = UDim2.new(0, 829, 0, 430)
+Page2.CanvasSize = UDim2.new(0, 0, 3, 0)
+Page2.ScrollBarThickness = 5
+
+TextLabel.Parent = Page2
+TextLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.Size = UDim2.new(0, 829, 0, 30)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Script"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 28.000
+
+XLPGUI.Name = "XLP GUI"
+XLPGUI.Parent = Page2
+XLPGUI.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+XLPGUI.BorderColor3 = Color3.fromRGB(30, 30, 30)
+XLPGUI.Position = UDim2.new(0, 0, 0, 30)
+XLPGUI.Size = UDim2.new(0, 128, 0, 31)
+XLPGUI.Font = Enum.Font.SourceSans
+XLPGUI.Text = "XLP Gui:"
+XLPGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+XLPGUI.TextSize = 24.000
+
+XLPButton.Name = "XLP Button"
+XLPButton.Parent = Page2
+XLPButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+XLPButton.BackgroundTransparency = 0.450
+XLPButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+XLPButton.Position = UDim2.new(0, 152, 0, 35)
+XLPButton.Size = UDim2.new(0, 217, 0, 23)
+XLPButton.Font = Enum.Font.SourceSans
+XLPButton.Text = "Load UI"
+XLPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+XLPButton.TextSize = 21.000
+XLPButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = XLPButton
+
+cyberhub.Name = "cyber hub"
+cyberhub.Parent = Page2
+cyberhub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+cyberhub.BorderColor3 = Color3.fromRGB(30, 30, 30)
+cyberhub.Position = UDim2.new(0, 0, 0, 87)
+cyberhub.Size = UDim2.new(0, 128, 0, 29)
+cyberhub.Font = Enum.Font.SourceSans
+cyberhub.Text = "Cyber Hub:"
+cyberhub.TextColor3 = Color3.fromRGB(255, 255, 255)
+cyberhub.TextSize = 24.000
+
+CyberHub.Name = "Cyber Hub"
+CyberHub.Parent = Page2
+CyberHub.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+CyberHub.BackgroundTransparency = 0.450
+CyberHub.BorderColor3 = Color3.fromRGB(30, 30, 30)
+CyberHub.Position = UDim2.new(0, 152, 0, 91)
+CyberHub.Size = UDim2.new(0, 217, 0, 23)
+CyberHub.Font = Enum.Font.SourceSans
+CyberHub.Text = "Load UI"
+CyberHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+CyberHub.TextSize = 21.000
+CyberHub.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = CyberHub
+
+TextLabel_2.Name = "."
+TextLabel_2.Parent = Folder
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.Position = UDim2.new(0, 0, 0.195604399, 0)
+TextLabel_2.Size = UDim2.new(0, 121, 0, 366)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.TextColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.TextSize = 14.000
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TopBar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.Position = UDim2.new(-0.000926351, 0, 0.0139460638, 0)
+TopBar.Size = UDim2.new(0, 953, 0, 18)
+
+Top.Name = "Top"
+Top.Parent = Frame
+Top.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Top.BorderColor3 = Color3.fromRGB(149, 149, 149)
+Top.Position = UDim2.new(-0.000926351, 0, 0, 0)
+Top.Size = UDim2.new(0, 953, 0, 23)
+Top.Font = Enum.Font.SourceSans
+Top.Text = "Wereareone0099  | Bee Swarm Simulator"
+Top.TextColor3 = Color3.fromRGB(255, 255, 255)
+Top.TextSize = 24.000
+
+-- Scripts:
+
+local function ENUH_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = true
+		script.Parent.Parent.Page2.Visible = false
+		script.Parent.Parent.Page3.Visible = false
+	end)
+end
+coroutine.wrap(ENUH_fake_script)()
+local function AQAEL_fake_script() -- Loading.LocalScript 
+	local script = Instance.new('LocalScript', Loading)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(AQAEL_fake_script)()
+local function PCYLYVO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		setclipboard("https://discord.gg/UHCGztPrSk")
+	end)
+end
+coroutine.wrap(PCYLYVO_fake_script)()
+local function GNHTIVQ_fake_script() -- Farming.LocalScript 
+	local script = Instance.new('LocalScript', Farming)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Page1.Visible = false
+		script.Parent.Parent.Page2.Visible = true
+		script.Parent.Parent.Page3.Visible = false
+	end)
+end
+coroutine.wrap(GNHTIVQ_fake_script)()
+local function FPWC_fake_script() -- XLPButton.LocalScript 
+	local script = Instance.new('LocalScript', XLPButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/ad0f314b2f07cb30b60f41d6f6a14e794d0807dd/bsstrainer.lua"))()
+	end)
+end
+coroutine.wrap(FPWC_fake_script)()
+local function FUMKW_fake_script() -- CyberHub.LocalScript 
+	local script = Instance.new('LocalScript', CyberHub)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NguyenMinh-Nhat/wereareone0099YT/main/cyber%20hub"))()
+	end)
+end
+coroutine.wrap(FUMKW_fake_script)()
+local function QPPOQT_fake_script() -- Frame.AntiAFK 
+	local script = Instance.new('LocalScript', Frame)
+
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		print ("Roblox Can't Kick Me :)")
+	end)
+	
+end
+coroutine.wrap(QPPOQT_fake_script)()
+local function DTUQOH_fake_script() -- Frame.Draggble 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local MainFrame = script.Parent
+	local TopBar = MainFrame:WaitForChild("TopBar")
+	
+	local Camera = workspace:WaitForChild("Camera")
+	
+	local DragMousePosition
+	local FramePosition
+	
+	local Draggable = false
+	
+	TopBar.InputBegan:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		    Draggable = true
+		    DragMousePosition = Vector2.new(input.Position.X, input.Position.Y)
+		    FramePosition = Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
+	    end
+	end)
+	
+	TopBar.InputEnded:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		    Draggable = false
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+	if Draggable == true then
+		local NewPosition = FramePosition + ((Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
+		   MainFrame.Position = UDim2.new(NewPosition.X, 0, NewPosition.Y, 0)
+	    end
+	end)
+end
+coroutine.wrap(DTUQOH_fake_script)()
+local function UWXYY_fake_script() -- Top.LocalScript 
+	local script = Instance.new('LocalScript', Top)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(UWXYY_fake_script)()
+local function TBEFUMG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+end
+coroutine.wrap(TBEFUMG_fake_script)() 
